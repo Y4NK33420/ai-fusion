@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Closest Hub</h1>
+    {% if closest_hub %}
+    <p>The closest hub with the required items is: {{ closest_hub.hub_name }}</p>
+    <p>Distance: {{ closest_hub.distance }} km</p>
+    {% else %}
+    <p>No hub found with the required items and urgency.</p>
+    {% endif %}
+</body>
+</html>
